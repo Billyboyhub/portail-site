@@ -764,3 +764,218 @@ h1 {
   .footer-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
   .hero-cta { flex-direction: column; align-items: flex-start; }
 }
+
+/* DRIVER PAGE */
+.driver-hero {
+  padding: 80px 0 60px;
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.driver-hero h1 {
+  font-size: 58px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  color: var(--navy);
+  margin-bottom: 20px;
+  line-height: 1.08;
+}
+
+.driver-hero .hero-sub {
+  max-width: 580px;
+  margin-bottom: 36px;
+}
+
+.cities-section {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.cities-section h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 48px;
+  letter-spacing: -0.5px;
+}
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.city-card {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+}
+
+.city-emoji { font-size: 36px; margin-bottom: 16px; }
+
+.city-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+
+.city-card p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.driver-benefits {
+  padding: 100px 0;
+  background: var(--navy);
+}
+
+.driver-benefits .section-label { color: var(--gold); }
+
+.driver-benefits h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 48px;
+  letter-spacing: -0.5px;
+}
+
+.benefits-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 48px;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.benefit-icon { font-size: 28px; flex-shrink: 0; margin-top: 2px; }
+
+.benefit-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.benefit-text p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+}
+
+.driver-how {
+  padding: 100px 0;
+  background: var(--off-white);
+}
+
+.driver-how h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 48px;
+  letter-spacing: -0.5px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.step-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+}
+
+.step-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--gold-light);
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.step-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* LEGAL PAGES */
+.legal-page {
+  padding: 80px 0 100px;
+}
+
+.legal-inner {
+  max-width: 760px;
+}
+
+.legal-inner h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.legal-updated {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 48px;
+}
+
+.legal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.legal-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.legal-section p, .legal-section ul, .legal-section ol {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.legal-section ul, .legal-section ol {
+  padding-left: 20px;
+}
+
+.legal-section li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+  .cities-grid { grid-template-columns: 1fr; }
+  .benefits-list { grid-template-columns: 1fr; }
+  .steps-grid { grid-template-columns: repeat(2, 1fr); }
+  .driver-hero h1 { font-size: 40px; }
+}
+
+@media (max-width: 560px) {
+  .steps-grid { grid-template-columns: 1fr; }
+}

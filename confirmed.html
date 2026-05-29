@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Confirmed — Portail</title>
+  <meta name="description" content="Your Portail account has been confirmed." />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .confirmed-section {
+      min-height: calc(100vh - 64px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+    }
+    .confirmed-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 56px 48px;
+      text-align: center;
+      max-width: 480px;
+      width: 100%;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 20px 60px rgba(15,23,42,0.08);
+    }
+    .confirmed-icon {
+      font-size: 72px;
+      margin-bottom: 24px;
+      display: block;
+    }
+    .confirmed-card h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+    .confirmed-card p {
+      font-size: 16px;
+      color: #64748b;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .confirmed-steps {
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 20px 24px;
+      text-align: left;
+    }
+    .confirmed-steps p {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #94a3b8;
+      margin-bottom: 12px;
+    }
+    .confirmed-step {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+    .confirmed-step:last-child { margin-bottom: 0; }
+    .step-dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #0f172a;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Portail" class="nav-logo-img" />
+        <span>Portail</span>
+      </a>
+      <div class="nav-links">
+        <a href="download.html" class="btn-nav">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="confirmed-section">
+    <div class="confirmed-card">
+      <span class="confirmed-icon">✅</span>
+      <h1>Email confirmed!</h1>
+      <p>Your Portail account is ready. Close this page and open the Portail app on your phone to log in.</p>
+
+      <div class="confirmed-steps">
+        <p>Next steps</p>
+        <div class="confirmed-step">
+          <div class="step-dot">1</div>
+          <span>Close this page</span>
+        </div>
+        <div class="confirmed-step">
+          <div class="step-dot">2</div>
+          <span>Open the Portail app on your phone</span>
+        </div>
+        <div class="confirmed-step">
+          <div class="step-dot">3</div>
+          <span>Log in with your email and password</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Portail" class="nav-logo-img" />
+        <span>Portail</span>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="drivers.html">Drive</a>
+        <a href="download.html">Download</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <p class="footer-copy">© 2026 Portail. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

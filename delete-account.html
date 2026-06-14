@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDJCVKMTHC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FDJCVKMTHC');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete Account — Portail</title>
+  <meta name="description" content="Learn how to delete your Portail account and what happens to your data." />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .steps-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .step-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .step-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--accent, #6d28d9);
+      color: #fff;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .step-body h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text-primary, #111);
+    }
+
+    .step-body p {
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--text-secondary, #555);
+    }
+
+    .step-body code {
+      background: rgba(109,40,217,0.1);
+      color: #6d28d9;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .data-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 600px) {
+      .data-grid { grid-template-columns: 1fr; }
+    }
+
+    .data-card {
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .data-card h4 {
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .data-card.deleted h4 { color: #dc2626; }
+    .data-card.retained h4 { color: #d97706; }
+
+    .data-card ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .data-card ul li {
+      font-size: 14px;
+      color: var(--text-secondary, #555);
+      padding-left: 14px;
+      position: relative;
+      line-height: 1.5;
+    }
+
+    .data-card.deleted ul li::before {
+      content: '×';
+      position: absolute;
+      left: 0;
+      color: #dc2626;
+      font-weight: 700;
+    }
+
+    .data-card.retained ul li::before {
+      content: '·';
+      position: absolute;
+      left: 2px;
+      color: #d97706;
+      font-weight: 700;
+    }
+
+    .notice-box {
+      background: #fef3c7;
+      border: 1px solid #fbbf24;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #92400e;
+      line-height: 1.6;
+    }
+
+    .contact-line {
+      margin-top: 40px;
+      font-size: 15px;
+      color: var(--text-secondary, #555);
+    }
+
+    .contact-line a {
+      color: #6d28d9;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-line a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Portail" class="nav-logo-img" />
+        <span>Portail</span>
+      </a>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="download.html" class="btn-nav">Download</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label">Account management</div>
+      <h1>Delete your account</h1>
+      <p class="page-hero-sub">You can permanently delete your Portail account at any time directly from the app. Your request is processed within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="values-section">
+    <div class="container">
+      <div class="section-label">How to delete</div>
+      <h2>Step-by-step instructions</h2>
+
+      <div class="steps-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h3>Open the Portail app</h3>
+            <p>Make sure you are signed in to the account you want to delete.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h3>Go to Settings</h3>
+            <p>Tap your profile icon, then tap <strong>Settings</strong> at the bottom of the screen.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h3>Tap "Delete Account"</h3>
+            <p>Scroll to the bottom of Settings and tap <strong>Delete Account</strong>.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h3>Confirm your request</h3>
+            <p>Type <code>DELETE</code> in the confirmation field, then tap the delete button. Your request is sent to our team immediately.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h3>Account removed within 24 hours</h3>
+            <p>Our team processes deletion requests promptly. Your account and personal data will be fully removed within 24 hours of your request.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="data-grid">
+        <div class="data-card deleted">
+          <h4>What gets deleted</h4>
+          <ul>
+            <li>Name, email, and phone number</li>
+            <li>Profile photo</li>
+            <li>Vehicle information</li>
+            <li>Trip history and bookings</li>
+            <li>Saved payment methods</li>
+            <li>Ratings and reviews</li>
+          </ul>
+        </div>
+        <div class="data-card retained">
+          <h4>What may be retained</h4>
+          <ul>
+            <li>Transaction records for tax and legal compliance (up to 7 years, as required by Canadian law)</li>
+            <li>Anonymized and aggregated platform data</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="notice-box">
+        ⚠️ <strong>This action is permanent.</strong> Once deleted, your account and data cannot be recovered. Please cancel any active bookings before submitting a deletion request.
+      </div>
+
+      <p class="contact-line">
+        Don't have access to the app? Email us at <a href="mailto:hello@portailapp.ca">hello@portailapp.ca</a> to request deletion.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Portail" class="nav-logo-img" />
+        <span>Portail</span>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="download.html">Download</a>
+        <a href="drivers.html">Drive</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <p class="footer-copy">© 2026 Portail. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -598,6 +598,15 @@ h1 {
   cursor: default;
 }
 
+#ios-btn {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#ios-btn:hover {
+  transform: translateY(-2px);
+}
+
 .store-icon { display: flex; align-items: center; }
 
 .store-text {

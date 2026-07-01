@@ -598,12 +598,14 @@ h1 {
   cursor: default;
 }
 
-#ios-btn {
+#ios-btn,
+#android-btn {
   opacity: 1;
   cursor: pointer;
 }
 
-#ios-btn:hover {
+#ios-btn:hover,
+#android-btn:hover {
   transform: translateY(-2px);
 }
 
